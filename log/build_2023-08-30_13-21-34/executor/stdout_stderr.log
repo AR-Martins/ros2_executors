@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/thread.dir/src/multithread.cpp.o[0m
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:5:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kalternated_timer[m[K’ is not a namespace-name
+    5 | using namespace std::[01;31m[Kalternated_timer[m[K;
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/thread.dir/build.make:76: CMakeFiles/thread.dir/src/multithread.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

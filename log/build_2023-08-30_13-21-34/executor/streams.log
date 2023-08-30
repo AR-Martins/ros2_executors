@@ -1,0 +1,9 @@
+[0.007s] Invoking command in '/home/robo/ros2_ws_mt/build/executor': CMAKE_PREFIX_PATH=/opt/ros/humble /home/robo/.local/bin/cmake --build /home/robo/ros2_ws_mt/build/executor -- -j20 -l20
+[0.042s] [ 50%] [32mBuilding CXX object CMakeFiles/thread.dir/src/multithread.cpp.o[0m
+[1.132s] [01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:5:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kalternated_timer[m[K’ is not a namespace-name
+[1.132s]     5 | using namespace std::[01;31m[Kalternated_timer[m[K;
+[1.132s]       |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.342s] gmake[2]: *** [CMakeFiles/thread.dir/build.make:76: CMakeFiles/thread.dir/src/multithread.cpp.o] Error 1
+[1.342s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/thread.dir/all] Error 2
+[1.343s] gmake: *** [Makefile:146: all] Error 2
+[1.347s] Invoked command in '/home/robo/ros2_ws_mt/build/executor' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /home/robo/.local/bin/cmake --build /home/robo/ros2_ws_mt/build/executor -- -j20 -l20
