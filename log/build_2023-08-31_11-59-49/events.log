@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.000287] (executor) JobQueued: {'identifier': 'executor', 'dependencies': OrderedDict()}
+[0.000303] (executor) JobStarted: {'identifier': 'executor'}
+[0.005168] (executor) JobProgress: {'identifier': 'executor', 'progress': 'cmake'}
+[0.005883] (executor) JobProgress: {'identifier': 'executor', 'progress': 'build'}
+[0.005973] (executor) Command: {'cmd': ['/home/robo/.local/bin/cmake', '--build', '/home/robo/ros2_ws_mt/build/executor', '--', '-j20', '-l20'], 'cwd': '/home/robo/ros2_ws_mt/build/executor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robo'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robo'), ('OLDPWD', '/home/robo/ros2_ws_mt/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '1733'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1950'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '14903'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robo'), ('JOURNAL_STREAM', '8:44655'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/robo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robo-AVELL:@/tmp/.ICE-unix/1931,unix/robo-AVELL:/tmp/.ICE-unix/1931'), ('INVOCATION_ID', '831e43200139428bbfc64c822c34b0f7'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S04991'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aa4352c7-bab2-472c-928f-8815ca8bcb48'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robo/ros2_ws_mt/build/executor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.027896] (executor) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099496] (-) TimerEvent: {}
+[0.144982] (executor) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.164874] (executor) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.166582] (executor) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.170852] (executor) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.178729] (executor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.189778] (executor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199656] (-) TimerEvent: {}
+[0.228358] (executor) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.229190] (executor) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299106] (executor) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.299754] (-) TimerEvent: {}
+[0.400071] (-) TimerEvent: {}
+[0.401086] (executor) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.500290] (-) TimerEvent: {}
+[0.514814] (executor) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.520184] (executor) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.521045] (executor) StdoutLine: {'line': b'-- Build files have been written to: /home/robo/ros2_ws_mt/build/executor\n'}
+[0.537363] (executor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/thread.dir/src/multithread.cpp.o\x1b[0m\n'}
+[0.600504] (-) TimerEvent: {}
+[0.700868] (-) TimerEvent: {}
+[0.801165] (-) TimerEvent: {}
+[0.901529] (-) TimerEvent: {}
+[1.001891] (-) TimerEvent: {}
+[1.102260] (-) TimerEvent: {}
+[1.202625] (-) TimerEvent: {}
+[1.302993] (-) TimerEvent: {}
+[1.403365] (-) TimerEvent: {}
+[1.503730] (-) TimerEvent: {}
+[1.604095] (-) TimerEvent: {}
+[1.634460] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:13:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected class-name before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.634657] (executor) StderrLine: {'line': b'   13 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[1.634725] (executor) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.636677] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLowTimer::LowTimer(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.636833] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:15:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KLowTimer\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[KNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.636917] (executor) StderrLine: {'line': b'   15 |         LowTimer(float low_timer) : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("low_subscriber") {\n'}
+[1.636979] (executor) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.637036] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:16:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klow_wait\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.637093] (executor) StderrLine: {'line': b'   16 |             this->\x1b[01;31m\x1b[Klow_wait\x1b[m\x1b[K = low_timer;\n'}
+[1.637149] (executor) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.640140] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:17:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klowtimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KLowTimer\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.640268] (executor) StderrLine: {'line': b'   17 |             \x1b[01;31m\x1b[Klowtimer_\x1b[m\x1b[K = this->create_wall_timer(\n'}
+[1.640334] (executor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.640392] (executor) StderrLine: {'line': b'      |             \x1b[32m\x1b[KLowTimer\x1b[m\x1b[K\n'}
+[1.640448] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:17:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcreate_wall_timer\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.640506] (executor) StderrLine: {'line': b'   17 |             lowtimer_ = this->\x1b[01;31m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[1.640561] (executor) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.640621] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:18:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLowtimer\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.640677] (executor) StderrLine: {'line': b'   18 |                 1000ms, std::bind(&\x1b[01;31m\x1b[KLowtimer\x1b[m\x1b[K::lowtimer_callback, this));\n'}
+[1.640741] (executor) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.640896] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LowTimer::lowtimer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.640937] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:23:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Klow_wait\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.640965] (executor) StderrLine: {'line': b'   23 |             sleep(this->\x1b[01;31m\x1b[Klow_wait\x1b[m\x1b[K)\n'}
+[1.640990] (executor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.641022] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:26:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.641049] (executor) StderrLine: {'line': b'   26 |             RCLCPP_info(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "%s Times", message.data.c_str());\n'}
+[1.641075] (executor) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.643325] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:26:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.643388] (executor) StderrLine: {'line': b'   26 |             RCLCPP_info(this->get_logger(), "%s Times", \x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K.data.c_str());\n'}
+[1.643424] (executor) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.646654] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:26:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCLCPP_info\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.646738] (executor) StderrLine: {'line': b'   26 |             \x1b[01;31m\x1b[KRCLCPP_info\x1b[m\x1b[K(this->get_logger(), "%s Times", message.data.c_str());\n'}
+[1.646768] (executor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.646794] (executor) StderrLine: {'line': b'      |             \x1b[32m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\n'}
+[1.649735] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.649805] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:39:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klow_sleep\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.649839] (executor) StderrLine: {'line': b'   39 |         std::make_shared<LowTimer>(\x1b[01;31m\x1b[Klow_sleep\x1b[m\x1b[K);\n'}
+[1.649866] (executor) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650017] (executor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.650051] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.650083] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.650107] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.650130] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.650153] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.650176] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.650198] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.650220] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.650242] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.650264] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1\x1b[m\x1b[K:\n'}
+[1.650286] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class LowTimer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.650313] (executor) StderrLine: {'line': b'   41 |     RCLCPP_INFO(low_node->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "low_time_node INFO: ");\n'}
+[1.650337] (executor) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650359] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class LowTimer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.650382] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.650407] (executor) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(low_node->get_logger(), "low_time_node INFO: ");\n'}
+[1.650429] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650452] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.650480] (executor) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(low_node->get_logger(), "low_time_node INFO: ");\n'}
+[1.650504] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650646] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.650689] (executor) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(low_node->get_logger(), "low_time_node INFO: ");\n'}
+[1.650717] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650741] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.650767] (executor) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(low_node->get_logger(), "low_time_node INFO: ");\n'}
+[1.650790] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650812] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.650841] (executor) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(low_node->get_logger(), "low_time_node INFO: ");\n'}
+[1.650863] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.650886] (executor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.650909] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.650932] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.650955] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.650979] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.651001] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.651022] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.651043] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.651064] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.651085] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.651108] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.651129] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1\x1b[m\x1b[K:\n'}
+[1.651150] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class LowTimer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651173] (executor) StderrLine: {'line': b'   41 |     RCLCPP_INFO(low_node->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "low_time_node INFO: ");\n'}
+[1.651195] (executor) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.651216] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:41:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class LowTimer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass LowTimer\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651240] (executor) StderrLine: {'line': b'   41 |     RCLCPP_INFO(low_node->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "low_time_node INFO: ");\n'}
+[1.651263] (executor) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.651284] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:45:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::executors::MultiThreadedExecutor::add_node(std::shared_ptr<LowTimer>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651306] (executor) StderrLine: {'line': b'   45 |     \x1b[01;31m\x1b[Kexecutor.add_node(low_node)\x1b[m\x1b[K;\n'}
+[1.651328] (executor) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.651349] (executor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.651371] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.651391] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.651413] (executor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1\x1b[m\x1b[K:\n'}
+[1.651434] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::Executor::add_node(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651460] (executor) StderrLine: {'line': b'  201 |   \x1b[01;36m\x1b[Kadd_node\x1b[m\x1b[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr, bool notify = true);\n'}
+[1.651481] (executor) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.651501] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KLowTimer\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::node_interfaces::NodeBaseInterface\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651524] (executor) StderrLine: {'line': b'  201 |   add_node(\x1b[01;36m\x1b[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr\x1b[m\x1b[K, bool notify = true);\n'}
+[1.651545] (executor) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.651567] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::Executor::add_node(std::shared_ptr<rclcpp::Node>, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651589] (executor) StderrLine: {'line': b'  209 |   \x1b[01;36m\x1b[Kadd_node\x1b[m\x1b[K(std::shared_ptr<rclcpp::Node> node_ptr, bool notify = true);\n'}
+[1.651612] (executor) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.651633] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KLowTimer\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::Node\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651655] (executor) StderrLine: {'line': b'  209 |   add_node(\x1b[01;36m\x1b[Kstd::shared_ptr<rclcpp::Node> node_ptr\x1b[m\x1b[K, bool notify = true);\n'}
+[1.651676] (executor) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.651697] (executor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:37:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klow_timer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.651721] (executor) StderrLine: {'line': b'   37 |     float \x1b[01;35m\x1b[Klow_timer\x1b[m\x1b[K = 5.0;\n'}
+[1.651743] (executor) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.704272] (-) TimerEvent: {}
+[1.804576] (-) TimerEvent: {}
+[1.865226] (executor) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/thread.dir/build.make:76: CMakeFiles/thread.dir/src/multithread.cpp.o] Error 1\n'}
+[1.865377] (executor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/thread.dir/all] Error 2\n'}
+[1.865507] (executor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.869122] (executor) CommandEnded: {'returncode': 2}
+[1.900998] (executor) JobEnded: {'identifier': 'executor', 'rc': 2}
+[1.904763] (-) TimerEvent: {}
+[1.911420] (-) EventReactorShutdown: {}

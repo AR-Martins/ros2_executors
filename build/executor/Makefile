@@ -198,24 +198,37 @@ executor_uninstall/fast:
 .PHONY : executor_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named thread
+# Target rules for targets named multi
 
 # Build rule for target.
-thread: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread
-.PHONY : thread
+multi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multi
+.PHONY : multi
 
 # fast build rule for target.
-thread/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
-.PHONY : thread/fast
+multi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/build
+.PHONY : multi/fast
+
+#=============================================================================
+# Target rules for targets named single
+
+# Build rule for target.
+single: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 single
+.PHONY : single
+
+# fast build rule for target.
+single/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single.dir/build.make CMakeFiles/single.dir/build
+.PHONY : single/fast
 
 src/multithread.o: src/multithread.cpp.o
 .PHONY : src/multithread.o
 
 # target to build an object file
 src/multithread.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/src/multithread.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/src/multithread.cpp.o
 .PHONY : src/multithread.cpp.o
 
 src/multithread.i: src/multithread.cpp.i
@@ -223,7 +236,7 @@ src/multithread.i: src/multithread.cpp.i
 
 # target to preprocess a source file
 src/multithread.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/src/multithread.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/src/multithread.cpp.i
 .PHONY : src/multithread.cpp.i
 
 src/multithread.s: src/multithread.cpp.s
@@ -231,8 +244,32 @@ src/multithread.s: src/multithread.cpp.s
 
 # target to generate assembly for a file
 src/multithread.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/src/multithread.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi.dir/build.make CMakeFiles/multi.dir/src/multithread.cpp.s
 .PHONY : src/multithread.cpp.s
+
+src/singlethread.o: src/singlethread.cpp.o
+.PHONY : src/singlethread.o
+
+# target to build an object file
+src/singlethread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single.dir/build.make CMakeFiles/single.dir/src/singlethread.cpp.o
+.PHONY : src/singlethread.cpp.o
+
+src/singlethread.i: src/singlethread.cpp.i
+.PHONY : src/singlethread.i
+
+# target to preprocess a source file
+src/singlethread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single.dir/build.make CMakeFiles/single.dir/src/singlethread.cpp.i
+.PHONY : src/singlethread.cpp.i
+
+src/singlethread.s: src/singlethread.cpp.s
+.PHONY : src/singlethread.s
+
+# target to generate assembly for a file
+src/singlethread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single.dir/build.make CMakeFiles/single.dir/src/singlethread.cpp.s
+.PHONY : src/singlethread.cpp.s
 
 # Help Target
 help:
@@ -249,10 +286,14 @@ help:
 	@echo "... test"
 	@echo "... executor_uninstall"
 	@echo "... uninstall"
-	@echo "... thread"
+	@echo "... multi"
+	@echo "... single"
 	@echo "... src/multithread.o"
 	@echo "... src/multithread.i"
 	@echo "... src/multithread.s"
+	@echo "... src/singlethread.o"
+	@echo "... src/singlethread.i"
+	@echo "... src/singlethread.s"
 .PHONY : help
 
 

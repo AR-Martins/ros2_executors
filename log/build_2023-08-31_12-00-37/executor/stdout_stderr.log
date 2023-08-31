@@ -1,0 +1,112 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/thread.dir/src/multithread.cpp.o[0m
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:12:31:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+   12 | class LowTimer : public::Node [01;31m[K{[m[K
+      |                               [01;31m[K^[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:[m[K In constructor ‘[01m[KLowTimer::LowTimer(float)[m[K’:
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:14:37:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLowTimer[m[K’ does not have any field named ‘[01m[KNode[m[K’
+   14 |         LowTimer(float low_timer) : [01;31m[KNode[m[K("low_subscriber") {
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:15:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LowTimer[m[K’ has no member named ‘[01m[Klow_wait[m[K’
+   15 |             this->[01;31m[Klow_wait[m[K = low_timer;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:16:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klowtimer_[m[K’ was not declared in this scope; did you mean ‘[01m[KLowTimer[m[K’?
+   16 |             [01;31m[Klowtimer_[m[K = this->create_wall_timer(
+      |             [01;31m[K^~~~~~~~~[m[K
+      |             [32m[KLowTimer[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:16:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LowTimer[m[K’ has no member named ‘[01m[Kcreate_wall_timer[m[K’
+   16 |             lowtimer_ = this->[01;31m[Kcreate_wall_timer[m[K(
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:17:36:[m[K [01;31m[Kerror: [m[K‘[01m[KLowtimer[m[K’ has not been declared
+   17 |                 1000ms, std::bind(&[01;31m[KLowtimer[m[K::lowtimer_callback, this));
+      |                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:[m[K In member function ‘[01m[Kvoid LowTimer::lowtimer_callback()[m[K’:
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:22:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LowTimer[m[K’ has no member named ‘[01m[Klow_wait[m[K’
+   22 |             sleep(this->[01;31m[Klow_wait[m[K)
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:25:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LowTimer[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+   25 |             RCLCPP_info(this->[01;31m[Kget_logger[m[K(), "%s Times", message.data.c_str());
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:25:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+   25 |             RCLCPP_info(this->get_logger(), "%s Times", [01;31m[Kmessage[m[K.data.c_str());
+      |                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_info[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   25 |             [01;31m[KRCLCPP_info[m[K(this->get_logger(), "%s Times", message.data.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[KRCLCPP_INFO[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:38:36:[m[K [01;31m[Kerror: [m[K‘[01m[Klow_sleep[m[K’ was not declared in this scope
+   38 |         std::make_shared<LowTimer>([01;31m[Klow_sleep[m[K);
+      |                                    [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1[m[K:
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LowTimer[m[K’ {aka ‘[01m[Kclass LowTimer[m[K’} has no member named ‘[01m[Kget_logger[m[K’
+   40 |     RCLCPP_INFO(low_node->[01;31m[Kget_logger[m[K(), "low_time_node INFO: ");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LowTimer[m[K’ {aka ‘[01m[Kclass LowTimer[m[K’} has no member named ‘[01m[Kget_logger[m[K’
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 |     [01;31m[KRCLCPP_INFO[m[K(low_node->get_logger(), "low_time_node INFO: ");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   40 |     [01;31m[KRCLCPP_INFO[m[K(low_node->get_logger(), "low_time_node INFO: ");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 |     [01;31m[KRCLCPP_INFO[m[K(low_node->get_logger(), "low_time_node INFO: ");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   40 |     [01;31m[KRCLCPP_INFO[m[K(low_node->get_logger(), "low_time_node INFO: ");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 |     [01;31m[KRCLCPP_INFO[m[K(low_node->get_logger(), "low_time_node INFO: ");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1[m[K:
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LowTimer[m[K’ {aka ‘[01m[Kclass LowTimer[m[K’} has no member named ‘[01m[Kget_logger[m[K’
+   40 |     RCLCPP_INFO(low_node->[01;31m[Kget_logger[m[K(), "low_time_node INFO: ");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:40:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class LowTimer[m[K’ {aka ‘[01m[Kclass LowTimer[m[K’} has no member named ‘[01m[Kget_logger[m[K’
+   40 |     RCLCPP_INFO(low_node->[01;31m[Kget_logger[m[K(), "low_time_node INFO: ");
+      |                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:44:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::MultiThreadedExecutor::add_node(std::shared_ptr<LowTimer>&)[m[K’
+   44 |     [01;31m[Kexecutor.add_node(low_node)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, bool)[m[K’
+  201 |   [01;36m[Kadd_node[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr, bool notify = true);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:66:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KLowTimer[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+  201 |   add_node([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K, bool notify = true);
+      |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(std::shared_ptr<rclcpp::Node>, bool)[m[K’
+  209 |   [01;36m[Kadd_node[m[K(std::shared_ptr<rclcpp::Node> node_ptr, bool notify = true);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KLowTimer[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’
+  209 |   add_node([01;36m[Kstd::shared_ptr<rclcpp::Node> node_ptr[m[K, bool notify = true);
+      |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/robo/ros2_ws_mt/src/executor/src/multithread.cpp:36:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klow_timer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |     float [01;35m[Klow_timer[m[K = 5.0;
+      |           [01;35m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/thread.dir/build.make:76: CMakeFiles/thread.dir/src/multithread.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

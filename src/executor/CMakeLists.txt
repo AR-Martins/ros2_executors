@@ -14,7 +14,14 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 
-add_executable(thread src/multithread.cpp)
-ament_target_dependencies(thread rclcpp std_msgs nav_msgs)
+add_executable(multi src/multithread.cpp)
+ament_target_dependencies(multi rclcpp std_msgs nav_msgs)
+add_executable(single src/singlethread.cpp)
+ament_target_dependencies(single rclcpp std_msgs nav_msgs)
+
+install(TARGETS
+  multi
+  single
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

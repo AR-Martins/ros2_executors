@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/thread.dir/src/multithread.cpp.o[0m
+[100%] [32m[1mLinking CXX executable thread[0m
+[100%] Built target thread
+-- Install configuration: ""
+-- Installing: /home/robo/ros2_ws_mt/install/executor/lib/executor/thread
+-- Set runtime path of "/home/robo/ros2_ws_mt/install/executor/lib/executor/thread" to ""
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/package_run_dependencies/executor
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/parent_prefix_path/executor
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/ament_prefix_path.sh
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/ament_prefix_path.dsv
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/path.sh
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/path.dsv
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.bash
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.sh
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.zsh
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.dsv
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/package.dsv
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/packages/executor
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/cmake/executorConfig.cmake
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/cmake/executorConfig-version.cmake
+-- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/package.xml

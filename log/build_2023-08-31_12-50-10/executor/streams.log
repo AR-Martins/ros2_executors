@@ -1,0 +1,22 @@
+[0.007s] Invoking command in '/home/robo/ros2_ws_mt/build/executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/robo/.local/bin/cmake --build /home/robo/ros2_ws_mt/build/executor -- -j20 -l20
+[0.038s] [100%] Built target thread
+[0.044s] Invoked command in '/home/robo/ros2_ws_mt/build/executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/robo/.local/bin/cmake --build /home/robo/ros2_ws_mt/build/executor -- -j20 -l20
+[0.086s] Invoking command in '/home/robo/ros2_ws_mt/build/executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/robo/.local/bin/cmake --install /home/robo/ros2_ws_mt/build/executor
+[0.099s] -- Install configuration: ""
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/lib/executor/thread
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/package_run_dependencies/executor
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/parent_prefix_path/executor
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/ament_prefix_path.sh
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/ament_prefix_path.dsv
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/path.sh
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/environment/path.dsv
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.bash
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.sh
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.zsh
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/local_setup.dsv
+[0.100s] -- Installing: /home/robo/ros2_ws_mt/install/executor/share/executor/package.dsv
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/ament_index/resource_index/packages/executor
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/cmake/executorConfig.cmake
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/cmake/executorConfig-version.cmake
+[0.100s] -- Up-to-date: /home/robo/ros2_ws_mt/install/executor/share/executor/package.xml
+[0.104s] Invoked command in '/home/robo/ros2_ws_mt/build/executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/robo/.local/bin/cmake --install /home/robo/ros2_ws_mt/build/executor
